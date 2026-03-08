@@ -2,18 +2,29 @@
 
 /* variables */
 
-:root { 
-    --primary-color: #FF2D78;       /* buttons, highlights, accents */
-    --secondary-color: #E8541A;     /* eyebrow labels, hover states */
-    --page-background: #FFF8F0;     /* main site background */
-    --body-text: #1A1A1A;           /* all main text */
-    --muted-text: #555555;          /* subtitles, captions, placeholders */
-    --heading-font: 'Unbounded', sans-serif;   /* all headings and titles */
-    --body-font: 'DM Sans', sans-serif;        /* body text, labels, buttons */
-    --spacing-sm: 16px;             /* small gaps */
-    --spacing-md: 32px;             /* medium gaps */
-    --spacing-lg: 64px;             /* section padding */
-    --spacing-xl: 120px;            /* large section padding */
+:root {
+  --primary-color: #FF2D78;
+  /* buttons, highlights, accents */
+  --secondary-color: #E8541A;
+  /* eyebrow labels, hover states */
+  --page-background: #FFF8F0;
+  /* main site background */
+  --body-text: #1A1A1A;
+  /* all main text */
+  --muted-text: #555555;
+  /* subtitles, captions, placeholders */
+  --heading-font: 'Unbounded', sans-serif;
+  /* all headings and titles */
+  --body-font: 'DM Sans', sans-serif;
+  /* body text, labels, buttons */
+  --spacing-sm: 16px;
+  /* small gaps */
+  --spacing-md: 32px;
+  /* medium gaps */
+  --spacing-lg: 64px;
+  /* section padding */
+  --spacing-xl: 120px;
+  /* large section padding */
 }
 
 /* Reset and base styles */
@@ -21,18 +32,18 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-    background-color: var(--page-background);
-    color: var(--body-text);
-    font-family: var(--body-font);
-    line-height: 1.6;
-    user-select: none;
+  font-size: 16px;
+  background-color: var(--page-background);
+  color: var(--body-text);
+  font-family: var(--body-font);
+  line-height: 1.6;
+  user-select: none;
 }
 
 /* Global styles */
@@ -71,8 +82,10 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: var(--spacing-sm) var(--spacing-lg);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--page-background);
   border-bottom: 2px solid var(--primary-color);
   z-index: 100;
@@ -98,8 +111,13 @@ html {
 }
 
 @keyframes shrinkLogo {
-  from { font-size: 200px; }
-  to { font-size: 28px; }
+  from {
+    font-size: 200px;
+  }
+
+  to {
+    font-size: 28px;
+  }
 }
 
 .nav__logo {
@@ -107,9 +125,10 @@ html {
   font-weight: 900;
   color: var(--primary-color);
   text-decoration: none;
+  line-height: 1;
   animation: shrinkLogo linear;
   animation-timeline: scroll();
-  animation-range: 0px 300px;
+  animation-range: 0px 172px;
 }
 
 .navbar--scrolled .nav__logo {
@@ -118,19 +137,12 @@ html {
 
 /* hero section */
 
-@keyframes heroOffset {
-  from { padding-top: 0px; }
-  to { padding-top: 300px; }
-}
-
 .hero-section {
+  margin-top: 234px;
   height: 450px;
-  animation: heroOffset linear;
-  animation-timeline: scroll();
-  animation-range: 0px 300px;
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  padding: 0 var(--spacing-lg);
 }
 
 /* hero primary content */
@@ -198,4 +210,23 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* separator section */
+
+.separator {
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-top: var(--primary-color) 4px solid;
+  border-bottom: var(--primary-color) 4px solid;
+}
+
+/* about section */
+
+.about-section {
+  height: 100vh;
 }
