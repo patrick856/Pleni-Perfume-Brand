@@ -103,16 +103,43 @@ html {
   gap: var(--spacing-lg);
 }
 
+.nav__links li {
+  display: flex;
+}
+
 .nav__link {
   font-family: var(--body-font);
   font-size: 15px;
   color: var(--body-text);
   text-decoration: none;
   letter-spacing: 0.05em;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
 }
 
-.nav__link:hover {
+.nav__link .text-original {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nav__link .text-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  font-weight: 800;
   color: var(--primary-color);
+}
+
+.nav__link:hover .text-original {
+  transform: translateY(100%);
+}
+
+.nav__link:hover .text-hover {
+  transform: translateY(0);
 }
 
 @keyframes shrinkLogo {
