@@ -59,6 +59,7 @@ html {
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  border-radius: 2px;
 }
 
 .btn:hover {
@@ -155,13 +156,40 @@ html {
 .hero__text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   gap: var(--spacing-sm);
   padding: var(--spacing-md);
-  flex: 1;
   height: 100%;
-  max-width: 600px;
-  margin-right: var(--spacing-lg)
+  max-width: 800px;
+  margin-right: var(--spacing-xl);
+}
+
+.hero-curve {
+  border-right: var(--border);
+  border-radius: 100%;
+  height: 100%;
+  width: 450px;
+  margin-left: -400px;
+  margin-right: var(--spacing-md);
+}
+
+.hero-curve1 {
+  border-right: var(--border);
+  border-right-color: var(--secondary-color);
+  border-radius: 40%;
+  height: 100%;
+  width: 400px;
+  margin-left: -400px;
+  margin-right: var(--spacing-md);
+}
+
+.hero-curve2 {
+  border-right: var(--border);
+  border-radius: 30%;
+  height: 100%;
+  width: 400px;
+  margin-left: -400px;
+  margin-right: var(--spacing-md);
 }
 
 .hero__eyebrow {
@@ -179,6 +207,7 @@ html {
   color: var(--primary-color);
   max-width: 400px;
   line-height: 110%;
+  margin-bottom: -10px;
 }
 
 .hero-title-span {
@@ -190,15 +219,16 @@ html {
   font-family: var(--body-font);
   font-size: 18px;
   color: var(--body-text);
-  max-width: 350px;
+  max-width: 400px;
   margin-bottom: 20px;
 }
 
 .hero-button {
-  width: 200px;
+  width: auto;
+  height: 64px;
   display: inline-block;
-  margin-right: 30px;
-  border-radius: 10px;
+  margin-right: var(--spacing-sm);
+  
 }
 
 /* hero image */
@@ -209,6 +239,9 @@ html {
   border-right: var(--border);
   border-left: var(--border);
   overflow: hidden;
+  position: relative;
+  z-index: 2;
+  margin-right: -200px;
 }
 
 .hero-image {
@@ -228,12 +261,6 @@ html {
   z-index: 1;
 }
 
-.hero__visual {
-  position: relative;
-  z-index: 2;
-  margin-right: -200px;
-}
-
 .hero__arc svg {
   width: 100%;
   height: 100%;
@@ -246,6 +273,10 @@ html {
   font-size: 13px;
   fill: var(--secondary-color);
   letter-spacing: 0.1em;
+}
+
+.hero__arc svg text:nth-child(4) {
+  fill: var(--primary-color);
 }
 
 .hero__arc path {
