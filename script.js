@@ -11,10 +11,17 @@ window.addEventListener('scroll', () => {
 })
 
 /* parallax effect for separator image */
-
 const parallax = document.querySelector('.separator-image')
 
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY
   parallax.style.backgroundPositionY = (scrolled * 0.35 + 140) + 'px'
+})
+
+/* separator contact */
+const separatorDiagonal = document.querySelector('.separator-contact')
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY
+  separatorDiagonal.style.backgroundPositionX = (1501 - scrolled * 0.3) + 'px'
 })
