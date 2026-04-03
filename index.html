@@ -4,9 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pleni</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <title>Pleni Perfume</title>
+    <link rel="preload" href="/styles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=DM+Sans:wght@300;400;500;800&display=swap"
+        media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=DM+Sans:wght@300;400;500;800&display=swap">
+    </noscript>
+    <meta name="description" content="Pleni is perfume for people who feel everything. Rich, bold, and unapologetically alive. Shop our signature scent and experience abundance in every spritz.">
 </head>
 
 <body>
@@ -29,63 +38,65 @@
         </ul>
     </nav>
 
-    <section class="hero-section" id="hero">
-        <div class="hero__text">
-            <h1 class="hero__title">WEAR YOUR <br><span class="hero-title-span">ABUNDANCE.</span></h1>
-            <p class="hero__subtitle">
-                Pleni is perfume for people who feel everything. Rich, bold, and unapologetically alive.
-            </p>
-        </div>
-        <div class="hero-button">
-            <a href="shop.html" class="btn btn--primary">SHOP THE SCENT</a>
-        </div>
-    </section>
-
-    <section class="about-section" id="about">
-        <div class="about__visual">
-            <div class="about-side">
-                <h1 class="about-side__title">· OUR STORY</h1>
+        <main>
+        <section class="hero-section" id="hero">
+            <div class="hero__text">
+                <h1 class="hero__title">WEAR YOUR <br><span class="hero-title-span">ABUNDANCE.</span></h1>
+                <p class="hero__subtitle">
+                    Pleni is perfume for people who feel everything. Rich, bold, and unapologetically alive.
+                </p>
             </div>
-        </div>
-        <div class="about__content">
-            <p class="section__eyebrow">Our Story</p>
+            <div class="hero-button">
+                <a href="shop.html" class="btn btn--primary">SHOP THE SCENT</a>
+            </div>
+        </section>
 
-            <h2 class="about__title">
-                Born from the belief that more is more.
-            </h2>
+        <section class="about-section" id="about">
+            <div class="about__visual">
+                <div class="about-side">
+                    <h1 class="about-side__title">· OUR STORY</h1>
+                </div>
+            </div>
+            <div class="about__content">
+                <p class="section__eyebrow">Our Story</p>
 
-            <p class="about__body">
-                Pleni started as a rebellion against the quiet. Against the minimal, the muted, the politely restrained.
-                We make perfume for people who walk into a room and own it.
-            </p>
+                <h2 class="about__title">
+                    Born from the belief that more is more.
+                </h2>
 
-            <p class="about__body">
-                Every Pleni scent is a statement — layered, complex, and built to linger. Because why whisper when you
-                can blaze?
-            </p>
+                <p class="about__body">
+                    Pleni started as a rebellion against the quiet. Against the minimal, the muted, the politely restrained.
+                    We make perfume for people who walk into a room and own it.
+                </p>
 
-            <ul class="about__values">
-                <li>Abundance over restraint</li>
-                <li>Art over formula</li>
-                <li>Boldness over subtlety</li>
-            </ul>
-        </div>
+                <p class="about__body">
+                    Every Pleni scent is a statement — layered, complex, and built to linger. Because why whisper when you
+                    can blaze?
+                </p>
 
-    </section>
+                <ul class="about__values">
+                    <li>Abundance over restraint</li>
+                    <li>Art over formula</li>
+                    <li>Boldness over subtlety</li>
+                </ul>
+            </div>
 
-    <section class="separator-image separator-lines"></section>
+        </section>
 
-    <section class="subscribe-section">
-        <div class="subscribe-inner">
-            <h3 class="subscribe-title">Join The Pulse</h3>
-            <p class="subscribe-subtitle">Subscribers get first access to limited drops.</p>
-            <form class="subscribe-form">
-            <input class="subscribe-input" type="email" placeholder="YOUR@EMAIL.COM" required>
-            <button type="submit" class="btn btn--primary">Subscribe</button>
-            </form>
-        </div>
-    </section>
+        <section class="separator-image separator-lines"></section>
 
+        <section class="subscribe-section">
+            <div class="subscribe-inner">
+                <h3 class="subscribe-title">Join The Pulse</h3>
+                <p class="subscribe-subtitle">Subscribers get first access to limited drops.</p>
+                <form class="subscribe-form">
+                <input class="subscribe-input" type="email" placeholder="YOUR@EMAIL.COM" required>
+                <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
     <footer id="footer">
         <div class="footer__inner">
             <div class="footer__links">
