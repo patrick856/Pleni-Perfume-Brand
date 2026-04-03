@@ -1,23 +1,7 @@
 
-/* auto scroll on load */
-if ('scrollRestoration' in history) {
-  history.scrollRestoration = 'manual'
-}
-
-const lenis = new Lenis({
-  duration: 0.5,
-  easing: (t) => 1 - Math.pow(1 - t, 3)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-requestAnimationFrame(raf)
-
 setTimeout(() => {
-  lenis.scrollTo(334, { duration: 0.6, onComplete: () => lenis.destroy() })  
-}, 300)
+  window.scrollTo({ top: 334, behavior: 'smooth' })
+}, 370)
 
 /* navbar scroll effect  DO NOT TOUCH */
 if (window.location.pathname === '/' || window.location.pathname.includes('index.html')) {
