@@ -626,6 +626,7 @@ body::-webkit-scrollbar {
 
 .subscribe-section{
   border-top: var(--border);
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 .subscribe-section h1{
   font-family: var(--heading-font);
@@ -675,6 +676,16 @@ font-family: var(--body-font);
   margin-bottom: var(--spacing-lg);
 }
 
+.subscribe-form .btn--primary {
+  padding: 20px var(--spacing-lg);
+  font-size: 24px;
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-style: italic;
+  transition: background-color 0.3s;
+  transition-delay: 1ms;
+  margin-left: -5px;
+}
 
 /* footer */
 
@@ -780,18 +791,16 @@ footer {
 }
 
 /* ═══════════════════════════════════════
-   SUBSCRIBE
+   shop - SUBSCRIBE
 ═══════════════════════════════════════ */
 
-.subscribe-section {
+.shop-subscribe-section {
   background-color: var(--page-background);
   padding: var(--spacing-xl) var(--spacing-lg);
-  height: min-content;
 }
 
-.subscribe-inner {
-  width: 900px;
-  height: min-content;
+.shop-subscribe-inner {
+  max-width: 800px;
   margin: 0 auto;
   border: var(--border);
   padding: var(--spacing-md) var(--spacing-lg);
@@ -802,31 +811,30 @@ footer {
   gap: var(--spacing-md);
 }
 
-.subscribe-title {
+.shop-subscribe-title {
   font-family: var(--heading-font);
   font-size: 48px;
   font-weight: 900;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: -0.02em;
-  margin-bottom: -35px;
+  margin-bottom: -40px;
 }
 
-.subscribe-subtitle {
+.shop-subscribe-subtitle {
   font-family: var(--body-font);
   font-size: 13px;
   color: var(--secondary-color);
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-weight: 700;
-  margin-bottom: 10px;
 }
 
-.subscribe-form {
+.shop-subscribe-form {
   display: flex;
 }
 
-.subscribe-input {
+.shop-subscribe-input {
   flex: 1;
   background-color: var(--page-background);
   border: var(--border);
@@ -838,12 +846,13 @@ footer {
   outline: none;
 }
 
-.subscribe-input::placeholder {
+.shop-subscribe-input::placeholder {
   color: var(--primary-color);
   opacity: 0.3;
 }
 
-.subscribe-form .btn--primary {
+.shop-subscribe-form .btn--primary {
+  border-radius: 0;
   padding: 20px var(--spacing-lg);
   font-size: 24px;
   font-family: var(--heading-font);

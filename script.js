@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* navbar scroll effect  DO NOT TOUCH */
-  if (window.location.pathname === '/' || window.location.pathname.includes('index.html')) {
+  if (isIndex) {
   window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar-home')
     if (window.scrollY > 272) {
