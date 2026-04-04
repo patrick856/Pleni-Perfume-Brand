@@ -279,13 +279,6 @@ body::-webkit-scrollbar {
   font-family: var(--heading-font);
   font-weight: 300;
   font-style: italic;
-  transition: background-color 0.3s;
-  transition-delay: 1ms;
-}
-
-.hero-button .btn--primary:hover {
-  background-color: var(--secondary-color);
-  color: var(--white);
 }
 
 /* about section */
@@ -419,7 +412,7 @@ body::-webkit-scrollbar {
 
 .home-shop-section {
   height: fit-content;
-  margin: var(--spacing-md);
+  margin: var(--spacing-xl) var(--spacing-md);
 }
 
 .shop-home-head_container {
@@ -431,7 +424,6 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: baseline;
   padding: 0 var(--spacing-md);
-  padding-top: var(--spacing-lg);
   text-align: center;
 }
 
@@ -632,10 +624,10 @@ body::-webkit-scrollbar {
    SUBSCRIBE
 ═══════════════════════════════════════ */
 
-.join-the-pulse{
-  border-top: 2px solid var(--primary-color);
+.subscribe-section{
+  border-top: var(--border);
 }
-.join-the-pulse h1{
+.subscribe-section h1{
   font-family: var(--heading-font);
   font-size: var(--spacing-xl);
   font-weight: 900;
@@ -643,11 +635,11 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 1em;
-  margin: var(--spacing-lg);
+  
   align-items: center;
   text-align: center;
 }
-.join-the-pulse p{
+.subscribe-section p{
 font-family: var(--body-font);
   font-size: 2rem;
   color: var(--secondary-color);
@@ -655,6 +647,7 @@ font-family: var(--body-font);
   font-style: italic;
   align-items: center;
   text-align: center;
+  margin: var(--spacing-lg) 0;
 }
 
 .subscribe-input {
@@ -674,23 +667,9 @@ font-family: var(--body-font);
   opacity: 0.3;
 }
 
-.subscribe-form .btn--primary {
-  padding: 20px var(--spacing-lg);
-  font-size: 24px;
-  font-family: var(--heading-font);
-  font-weight: 300;
-  font-style: italic;
-  transition: background-color 0.3s;
-  transition-delay: 1ms;
-}
-
-.subscribe-form .btn--primary:hover {
-  background-color: var(--secondary-color);
-  color: var(--white);
-}
-.join-the-pulse .subscribe-form {
+.subscribe-form {
   display: flex;
-  width: max-content;
+  width: 80%;
   align-items: center;
   margin: auto;
   margin-bottom: var(--spacing-lg);
@@ -870,13 +849,6 @@ footer {
   font-family: var(--heading-font);
   font-weight: 300;
   font-style: italic;
-  transition: background-color 0.3s;
-  transition-delay: 1ms;
-}
-
-.subscribe-form .btn--primary:hover {
-  background-color: var(--secondary-color);
-  color: var(--white);
 }
 
 
