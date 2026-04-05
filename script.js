@@ -38,12 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
     heroTitle.style.opacity = progress
     heroTitle.style.transform = `translateY(${(1 - progress) * 30}px)`
   })
-
-  /* separator contact */
-  const separatorDiagonal = document.querySelector('.separator-lines')
-
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY
-    separatorDiagonal.style.backgroundPositionX = (1501 - scrolled * 0.3) + 'px'
-  })
-});
+})
