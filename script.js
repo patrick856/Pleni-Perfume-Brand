@@ -1,5 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  //cursor effect
+  const cursor = document.querySelector('.cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const color = entry.target.dataset.cursor;
+        cursor.style.borderColor = color; 
+      }
+    });
+  }, { threshold: 0.5 }); 
+
+  document.querySelectorAll('section[data-cursor]').forEach(section => {
+    observer.observe(section);
+  });
+
+
+
+
   const page = window.location.pathname;
   const isIndex = page === '/' || page.endsWith('index.html');
 
