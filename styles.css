@@ -813,6 +813,100 @@ footer {
   margin: var(--spacing-lg);
 }
 
+/* shop collection section */
+
+.shop-collection-container {
+  margin: var(--spacing-xl) var(--spacing-md);
+}
+
+.collection-header{
+  border-bottom: var(--border);
+  font-size: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.collection-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+}
+
+.collection-item {
+  position: relative;
+  overflow: hidden; 
+  height: 80%;
+}
+
+.collection-img{ 
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  border: var(--border);
+  display: block; 
+}
+
+.img-header{
+  position: absolute;
+  transform: none; 
+  top: var(--spacing-sm); 
+  left: var(--spacing-md); 
+  background-color: var(--page-background);
+  font-family: var(--heading-font);
+  font-size: 2rem; 
+  width: min-content;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin: 0;
+  z-index: 10;
+}
+
+
+.item-action-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 100px;
+    margin: 0 var(--spacing-lg);
+    /* Styling to match your theme */
+    background-color: var(--page-background);
+    border: 4px solid var(--secondary-color); 
+    color: var(--secondary-color);
+    /* Layout for price and button */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* THE MAGIC: Push it down exactly 100% of its own height */
+    transform: translateY(200%); 
+    
+    /* Smooth slide animation */
+    transition: transform 0s ease-in-out;
+}
+
+/* The hover trigger */
+.collection-item:hover .item-action-bar {
+    /* Slide it back up to its natural resting place at the bottom */
+    transform: translateY(-50px);
+}
+
+/* Typography for the price */
+.item-price {
+    font-family: var(--heading-font);
+    padding: var(--spacing-sm);
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+/* Tweak your existing button to fit better inside the bar */
+.add-to-cart-btn {
+    font-size: 14px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    font-style: normal; /* overriding the italic from your home page */
+}
+
 /* ═══════════════════════════════════════
    shop - SUBSCRIBE
 ═══════════════════════════════════════ */
