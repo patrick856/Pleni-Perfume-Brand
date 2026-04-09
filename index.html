@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pleni</title>
+    <title>Pleni Perfume</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=DM+Sans:wght@300;400;500;800&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=DM+Sans:wght@300;400;500;800&display=swap">
+    </noscript>
+    <meta name="description"
+        content="Pleni is perfume for people who feel everything. Rich, bold, and unapologetically alive. Shop our signature scent and experience abundance in every spritz.">
 </head>
 
 <body>
     <nav class="navbar">
-        <a href="#" class="nav__logo-home">PLENI</a>
+        <a href="index.html" class="nav__logo-home">PLENI</a>
 
         <ul class="nav__links">
             <li><a href="index.html" class="nav__link">
@@ -29,118 +39,128 @@
         </ul>
     </nav>
 
-    <section class="hero-section" id="hero">
-        <div class="hero-curve"></div>
-        <div class="hero-curve1"></div>
-        <div class="hero-curve2"></div>
-        <div class="hero__text">
-            <span class="hero__eyebrow">New Collection</span>
-            <h1 class="hero__title">Wear Your <span class="hero-title-span">Abundance.</span></h1>
-            <p class="hero__subtitle">
-                Pleni is perfume for people who feel everything. Rich, bold, and unapologetically alive.
-            </p>
-            <div class="hero-buttons">
-                <a class="btn btn--primary hero-button" href="shop.html">Pleni Perfumes</a>
-                <a class="btn btn--ghost hero-button" href="contact.html">Get in Touch</a>
+    <div class="cursor"></div>
+
+    <main>
+        <section class="hero-section" id="hero" data-cursor="var(--secondary-color)">
+            <div class="hero__text">
+                <h1 class="hero__title">WEAR YOUR <br><span class="hero-title-span">ABUNDANCE <span id="hero-dot">.</span></span></h1>
+                <p class="hero__subtitle">
+                    Pleni is perfume for people who feel everything. Rich, bold, and unapologetically alive.
+                </p>
             </div>
-        </div>
 
-        <div class="hero__visual">
-            <img class="hero-image" src="images/hero.jpeg">
-        </div>
-
-        <div class="hero__arc">
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-
-                <!-- outer arc -->
-                <path id="arc1" d="M 200,10 A 190,190 0 1,1 199.99,10" fill="none" />
-                <text>
-                    <textPath href="#arc1" startOffset="0%">
-                        · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW
-                        COLLECTION · NEW COLLECTION · NEW COLLECTION · ====
-                    </textPath>
-                </text>
-
-                <!-- middle arc -->
-                <path id="arc2" d="M 200,60 A 140,140 0 1,1 199.99,60" fill="none" />
-                <text>
-                    <textPath href="#arc2" startOffset="0%">
-                        · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME ·
-                        PLENI · PERFUME · PLENI · ==
-                    </textPath>
-                </text>
-
-                <!-- inner arc -->
-                <path id="arc3" d="M 200,110 A 90,90 0 1,1 199.99,110" fill="none" />
-                <text>
-                    <textPath href="#arc3" startOffset="0%">
-                        --------------------------------------------------------------------------------------------
-                    </textPath>
-                </text>
-
-            </svg>
-        </div>
-    </section>
-
-    <section class="separator-image"></section>
-
-    <section class="about-section" id="about">
-        <div class="about__visual">
-            <div class="about-side">
-                <h1 class="about-side__title">· OUR STORY</h1>
+            <div class="hero-button">
+                <a href="shop.html" class="btn btn--primary">SHOP THE SCENT</a>
             </div>
-            <div class="about__image-placeholder">
-                <img class="about-image" src="images/about.jpeg">
+
+            <div class="hero-bg">
+                <div class="hero-bg-left"></div>
+                <div class="hero-bg-right">
+                    <img src="images/home-hero-2.jpg" alt="perfume" />
+                </div>
             </div>
-        </div>
-        <div class="about__content">
-            <p class="section__eyebrow">Our Story</p>
+        </section>
 
-            <h2 class="about__title">
-                Born from the belief that more is more.
-            </h2>
+        <section class="about-section" id="about" data-cursor="var(--body-text)">
+            <div class="about__visual">
+                <div class="about-side">
+                    <h1 class="about-side__title">· OUR STORY</h1>
+                </div>
+            </div>
+            <div class="about__content">
+                <p class="section__eyebrow">Our Story</p>
 
-            <p class="about__body">
-                Pleni started as a rebellion against the quiet. Against the minimal, the muted, the politely restrained.
-                We make perfume for people who walk into a room and own it.
-            </p>
+                <h2 class="about__title">
+                    Born from the belief that more is more.
+                </h2>
 
-            <p class="about__body">
-                Every Pleni scent is a statement — layered, complex, and built to linger. Because why whisper when you
-                can blaze?
-            </p>
+                <p class="about__body">
+                    Pleni started as a rebellion against the quiet. Against the minimal, the muted, the politely
+                    restrained.
+                    We make perfume for people who walk into a room and own it.
+                </p>
 
-            <ul class="about__values">
-                <li>Abundance over restraint</li>
-                <li>Art over formula</li>
-                <li>Boldness over subtlety</li>
-            </ul>
-        </div>
+                <p class="about__body">
+                    Every Pleni scent is a statement — layered, complex, and built to linger. Because why whisper when
+                    you
+                    can blaze?
+                </p>
+            </div>
 
-    </section>
+        </section>
 
-    <section class="separator-image separator-lines"></section>
+        <section class="home-shop-section" data-cursor="var(--body-text)">
+            <div class="shop-home-head_container">
+                <div class="shop-home_header">
+                    <h2 class="collection-header">COLLECTIONS</h2>
+                    <p class="collection-volume">VOL.24</p>
+                </div>
+                <hr class="home-shop_sperator">
+            </div>
 
-    
+            <div class="collection-grid">
+                <a href="shop.html" class="card-link">
+                    <div class="left-grid">
+                        <div class="left-grid_header">
+                            <p class="best-seller">BEST SELLER</p>
+                            <h1 class="left-grid_title">ULTRA PINK</h1>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="images/home-shop.png" alt="Ultra Pink Perfume Bottle" class="left-grid_image">
+                        </div>
+                        <div class="left-grid_description">
+                            <span class="left-grid_desc_title">Crushed raspberries , neon amber and industrial musk</span>
+                            <span class="left-grid_price">$185</span>
+                        </div>
+                    </div>
+                </a>
 
-    <section class="subscribe-section">
-        <div class="subscribe-inner">
-            <h3 class="subscribe-title">Join The Pulse</h3>
-            <p class="subscribe-subtitle">Subscribers get first access to limited drops.</p>
+                <a href="shop.html" class="card-link">
+                    <div class="right-grid right-grid_top">
+                        <div class="img-wrapper">
+                            <img src="images/shop-hero-side-top.png" alt="burnt ochre" class="right-grid_image">
+                        </div>
+                        <div class="right-grid_desc">
+                            <h1 class="right-grid_title">BURNT OCHRE</h1>
+                            <p class="right-grid_body">Tobacco leaf, smoked oud, and dried orange peel.</p>
+                            <p class="right-grid_price">$140</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="shop.html" class="card-link">
+                    <div class="right-grid right-grid_bottom">
+                        <div class="img-wrapper">
+                            <img src="images/shop-hero-side-top.png" alt="static white" class="right-grid_image">
+                        </div>
+                        <div class="right-grid_desc">
+                            <h1 class="right-grid_title">STATIC WHITE</h1>
+                            <p class="right-grid_body">Cold linen, ozone, and white peppercorn.</p>
+                            <p class="right-grid_price">$165</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="subscribe-section" data-cursor="var(--secondary-color)">
+            <h1>JOIN THE <br>PULSE</h1>
+            <p>NO FLUFF. JUST THE LASTEST DROPS AND SCENT THEORY</p>
             <form class="subscribe-form">
-            <input class="subscribe-input" type="email" placeholder="YOUR@EMAIL.COM" required>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+                <input class="subscribe-input" type="email" placeholder="YOUR@EMAIL.COM" required>
+                <button type="submit" class="btn btn--primary">Subscribe</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer id="footer">
         <div class="footer__inner">
             <div class="footer__links">
                 <nav class="footer__nav">
-                    <a href="#hero" class="footer__link">Home</a>
-                    <a href="#about" class="footer__link">About</a>
-                    <a href="#contact" class="footer__link">Contact</a>
+                    <a href="index.html" class="footer__link">Home</a>
+                    <a href="shop.html" class="footer__link">Shop</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
                 </nav>
 
             </div>
