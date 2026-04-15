@@ -819,11 +819,9 @@ footer {
   margin: var(--spacing-xl) var(--spacing-md);
 }
 
-.collection-header{
-  border-bottom: var(--border);
-  font-size: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-}
+
+/* shop header is overlapping with home-shop seaction */
+
 
 .collection-content{
   display: grid;
