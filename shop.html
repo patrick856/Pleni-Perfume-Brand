@@ -37,13 +37,14 @@
 
   <div class="cursor"></div>
 
-  <section class="shop-hero" id="shop-hero">
-    <h2 class="shop-hero-text">SHOP THE <br> SCENT</h2>
-  </section>
+    <section class="shop-hero" id="shop-hero" data-cursor="var(--body-text)">
+        <h2 class="shop-hero-text">SHOP THE <br> SCENT</h2>
+    </section>
 
-<section class="shop-collection-container">
+    <section class="shop-collection-container" data-cursor="var(--body-text)">
         <div class="collection-header">
-            <h1>COLLECTION</h1>
+            <h1>COLLECTION / 01</h1>
+            <p>Scroll to Explore</p>
         </div>
         <div class="collection-content">
             <div class="collection-item">
@@ -51,6 +52,45 @@
                     VELVET STATIC
                 </h1>
                 <img src="images/collection2.png" alt="Collection Item 1" class="collection-img">
+                <div class="item-action-bar">
+                    <span class="item-price">$145</span>
+                    <button class="btn btn--primary add-to-cart-btn">ADD TO CART</button>
+                </div>                
+            </div>
+            <div class="collection-item">
+                <h1 class="img-header">
+                    ACID BLOOM
+                </h1>
+                <img src="images/shop-perfume-2.png" alt="Collection Item 2" class="collection-img">
+                <div class="item-action-bar">
+                    <span class="item-price">$145</span>
+                    <button class="btn btn--primary add-to-cart-btn">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="collection-item">
+                <h1 class="img-header">
+                    NEON MOSS
+                </h1>
+                <img src="images/shop-perfume-3.png" alt="Collection Item 3" class="collection-img">
+                <div class="item-action-bar">
+                    <span class="item-price">$145</span>
+                    <button class="btn btn--primary add-to-cart-btn">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-collection-container" data-cursor="var(--body-text)">
+        <div class="collection-header">
+            <h1>COLLECTION / 02</h1>
+            <p>Scroll to Explore</p>
+        </div>
+        <div class="collection-content">
+            <div class="collection-item">
+                <h1 class="img-header">
+                    VELVET STATIC
+                </h1>
+                <img src="images/shop-perfume-2.png" alt="Collection Item 1" class="collection-img">
                 <div class="item-action-bar">
                     <span class="item-price">$145</span>
                     <button class="btn btn--primary add-to-cart-btn">ADD TO CART</button>
@@ -70,7 +110,7 @@
                 <h1 class="img-header">
                     NEON MOSS
                 </h1>
-                <img src="images/collection2.png" alt="Collection Item 3" class="collection-img">
+                <img src="images/shop-perfume-3.png" alt="Collection Item 3" class="collection-img">
                 <div class="item-action-bar">
                     <span class="item-price">$145</span>
                     <button class="btn btn--primary add-to-cart-btn">ADD TO CART</button>
@@ -79,7 +119,7 @@
         </div>
     </section>
 
-   <section class="shop-subscribe-section">
+   <section class="shop-subscribe-section" data-cursor="var(--secondary-color)">
         <div class="shop-subscribe-inner">
             <h3 class="shop-subscribe-title">Join The Pulse</h3>
             <p class="shop-subscribe-subtitle">Subscribers get first access to limited drops.</p>
@@ -89,6 +129,27 @@
             </form>
         </div>
     </section>
+
+    <footer id="footer" data-cursor="var(--body-text)">
+        <div class="footer__inner">
+            <div class="footer__links">
+                <nav class="footer__nav">
+                    <a href="index.html" class="footer__link">Home</a>
+                    <a href="shop.html" class="footer__link">Shop</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </nav>
+
+            </div>
+            <div class="footer__logo-block">
+                <div class="footer__logo">PLENI</div>
+                <p class="footer__tagline">Abundance in every scent.</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2025 Pleni. All rights reserved.</p>
+            <p class="footer__copy">Made with bold intentions.</p>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
