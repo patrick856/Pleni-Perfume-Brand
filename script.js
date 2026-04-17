@@ -13,38 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
   });
 
-  // Change cursor color on primary button hover
-  document.querySelectorAll('.btn--primary').forEach(btn => {
-    btn.addEventListener('mouseenter', () => {
-      cursor.style.borderColor = 'var(--primary-color)';
-    });
-    btn.addEventListener('mouseleave', () => {
-      const heroSection = document.querySelector('.hero-section');
-      const heroRect = heroSection?.getBoundingClientRect();
-      const isInHero = heroRect && heroRect.top < window.innerHeight && heroRect.bottom > 0;
-      
-      if (isInHero) {
-        cursor.style.borderColor = 'var(--secondary-color)';
-      } else {
-        cursor.style.borderColor = 'var(--body-text)';
-      }
-    });
-  });
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const color = entry.target.dataset.cursor;
-        cursor.style.borderColor = color; 
-      }
-    });
-  }, { threshold: 0.5 }); 
-
-  document.querySelectorAll('section[data-cursor]').forEach(section => {
-    observer.observe(section);
-  });
-
-
 
 
   const page = window.location.pathname;

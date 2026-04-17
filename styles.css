@@ -73,14 +73,14 @@ body::-webkit-scrollbar {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px dashed var(--primary-color);
-  background: transparent; /* hollow */
+  border: none;
+  background: var(--body-text);
   position: fixed;
   pointer-events: none; 
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: background-color 0.3s ease, border-color 0.3s ease, width 0.2s ease, height 0.2s ease;
   animation: spin 4s linear infinite;
+  transition: width 0.2s ease, height 0.2s ease;
 }
 
 @keyframes spin {
@@ -88,7 +88,26 @@ body::-webkit-scrollbar {
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+.cursor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px dashed var(--primary-color);
+  background: transparent;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
 .cursor.hovering {
+  width: 12px;
+  height: 12px;
+}
+
+.cursor.hovering::before {
   width: 40px;
   height: 40px;
 }
